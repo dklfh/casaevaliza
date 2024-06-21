@@ -4,8 +4,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        gothic: ['Gothic', 'sans-serif'],
-        gothicBold: ['Gothic Bold', 'sans-serif'],
+        gothic: ['Didact Gothic', 'sans-serif'],
+      },
+      letterSpacing: {
+        custom: '0.09em',
+      },
+      colors: {
+        'bold': '#646464',
+        'regular': '#999999',
       },
     },
   },

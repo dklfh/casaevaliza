@@ -1,13 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <title>Document</title>
+    <title>Casa Evaliza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
     <link href="css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="icon" href="/image/logo-casa.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 </head>
+
 <body>
-    <h1 class="text-5xl text-blue-950 ">asklkasd</h1>
+    <div id="controls-carousel" class="relative w-full h-screen" data-carousel="slide">
+        <div class="relative h-screen overflow-hidden rounded-lg">
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/image/IMG-20240618-WA0002.jpg"
+                    class="absolute block w-full h-screen object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="...">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <img src="/image/IMG-20240618-WA0003.jpg"
+                    class="absolute block w-full h-screen object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="...">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/image/IMG-20240618-WA0006.jpg"
+                    class="absolute block w-full h-screen object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="...">
+            </div>
+        </div>
+
+        <button type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+
+    <section class="my-12">
+        <div
+            class="px-24 xl:mx-28 md:py-0 lg:mx-8 lg:px-4 lg:py-12 md:mx-6 max-sm:px-8">
+            <h1 class="font-gothic text-3xl mb-12 font-black tracking-widest text-bold max-sm:text-[32px]">Welcome to
+                Casa Evaliza</h1>
+            <p
+                class="mb-4 font-gothic leading-10 tracking-custom text-regular lg:py-12">
+                Casa Evaliza is a spacious Bali
+                rental villa, located 250 metres from the beach in the up market Seminyak area on Bali's southwest coast
+                and accessed
+                through the same road which serves the Club at The Legian Hotel, and just minutes walk from the world
+                famous Ku De Ta restaurant.</p>
+        </div>
+    </section>
+
+    <footer class="rounded-t-lg bg-bold">
+        <div class="w-full mx-auto max-w-screen-xl p-4 flex items-center justify-between">
+            <br>
+            <ul class="flex flex-wrap items-center text-sm font-medium text-slate-300">
+                <li>
+                    <a href="link.html" class="hover:underline me-4 font-gothic md:me-6">Link</a>
+                </li>
+                <li>
+                    <a href="press.html" class="hover:underline me-4 font-gothic md:me-6">Press</a>
+                </li>
+                <li>
+                    <a href="sitemap.html" class="hover:underline me-4 font-gothic md:me-6">Sitemap</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
+
 </html>
