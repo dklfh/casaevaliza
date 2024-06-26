@@ -12,12 +12,87 @@
 </head>
 
 <body>
+    <nav class="shadow-lg">
+        <div class="mx-28 px-4 hidden xl:block ">
+            <div class="flex flex-col">
+                <div class="pt-8 flex gap-20 items-center">
+                    <hr class="w-full h-px bg-regular border-0 rounded grow">
+                    <a href="langfrance.html" class="border rounded-sm border-regular p-0.5"><img
+                            src="/image/IMG-20240618-WA0004.jpg" class="w-7" alt=""></a>
+                </div>
+                <div class="flex items-center justify-between mb-1.5">
+                    <a href="index.html"><img src="/image/IMG-20240618-WA0005.jpg" class="w-52" alt=""></a>
+                    <div class="">
+                        <ul class="flex">
+                            <li
+                                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                                <a href="about.html">About Casa Evaliza</a>
+                            </li>
+                            <li
+                                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                                <a href="acco.html">Accommodation</a>
+                            </li>
+                            <li
+                                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                                <a href="facilities.html">Facilities</a>
+                            </li>
+                            <li
+                                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li
+                                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                                <a href="location.html">Location</a>
+                            </li>
+                            <li
+                                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                                <a href="galery.html">Galery</a>
+                            </li>
+                            <li
+                                class="pl-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider">
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="block xl:hidden items-center fixed top-0 left-0 right-0 z-40 shadow-lg bg-white">
+        <div class="flex justify-between px-5 py-2 items-center">
+            <div id="hamburgerMenu" class="space-y-1 pl-2 cursor-pointer">
+                <div class="bar w-6 h-0.5 rounded bg-regular transition-transform duration-300 ease-in-out"></div>
+                <div class="bar w-6 h-0.5 rounded bg-regular transition-transform duration-300 ease-in-out"></div>
+                <div class="bar w-6 h-0.5 rounded bg-regular transition-transform duration-300 ease-in-out"></div>
+            </div>
+            <a href="index.html"><img src="/image/IMG-20240618-WA0005.jpg" class="w-40" alt=""></a>
+            <img id="moreVert" src="/image/more_vert.png" class="size-8 cursor-pointer" alt="">
+        </div>
+        <div id="hiddenImage" class="absolute right-0 top-full rounded-b-lg bg-white p-4 shadow-lg transition-transform duration-300 ease-in-out transform translate-x-full">
+            <a href="langfrance.html"><img src="/image/IMG-20240618-WA0004.jpg" alt=""></a>
+        </div>
+        <!-- Sidebar -->
+        <div id="sidebar" class="absolute top-full left-0 h-screen w-64 bg-white text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-20">
+            <div class="p-4">
+                <ul>
+                    <li class="py-2 ml-3"><a href="about.html" class="font-gothic text-regular tracking-wider">About Casa Evaliza</a></li>
+                    <li class="py-2 ml-3"><a href="acco.html" class="font-gothic text-regular tracking-wider">Accommodation</a></li>
+                    <li class="py-2 ml-3"><a href="facilities.html" class="font-gothic text-regular tracking-wider">Facilities</a></li>
+                    <li class="py-2 ml-3"><a href="services.html" class="font-gothic text-regular tracking-wider">Services</a></li>
+                    <li class="py-2 ml-3"><a href="location.html" class="font-gothic text-regular tracking-wider">Location</a></li>
+                    <li class="py-2 ml-3"><a href="galery.html" class="font-gothic text-regular tracking-wider">Gallery</a></li>
+                    <li class="py-2 ml-3"><a href="contact.html" class="font-gothic text-regular tracking-wider">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <section>
         <img src="/image/IMG-20240618-WA0007.jpg" class="w-full h-lvh object-cover" alt="">
     </section>
 
     <section class="my-12">
-        <div class="mx-28 py-12 px-4">
+        <div class="xl:mx-28 lg:py-12 lg:px-4 lg:mx-8 sm:py-0 sm:px-8 sm:mx-12 max-sm:py-0 max-sm:px-8  md:mx-6 md:px-8">
             <h2 class="py-2 mb-12 text-bold font-gothic text-3xl font-black border-b-2 border-regular tracking-wider">
                 Contact Us</h2>
 
@@ -28,43 +103,43 @@
             <br>
 
             <form class="max-w-xl mx-auto">
-                <div class="mb-5 flex">
+                <div class="mb-5 flex max-sm:flex-col">
                     <label for="email"
-                        class="w-2/5 text-right mx-4 content-center mb-2 text-regular font-gothic dark:text-white">Enter
+                        class="w-2/5 max-sm:w-full max-sm:text-left text-right sm:mx-0 lg:mx-4 content-center mb-2 text-regular font-gothic dark:text-white">Enter
                         Your Name :</label>
                     <input type="email" id="email"
-                        class="border border-gray-300 mx-4 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        class="border border-gray-300 sm:mx-4 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required />
                 </div>
-                <div class="mb-5 flex">
+                <div class="mb-5 flex max-sm:flex-col">
                     <label for="email"
-                        class="w-2/5 text-right mx-4 content-center mb-2 text-regular font-gothic dark:text-white">E-mail
+                        class="w-2/5 max-sm:w-full max-sm:text-left text-right sm:mx-0 lg:mx-4 content-center mb-2 text-regular font-gothic dark:text-white">E-mail
                         Address :</label>
                     <input type="email" id="email"
-                        class="border border-gray-300 mx-4 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        class="border border-gray-300 sm:mx-4 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required />
                 </div>
-                <div class="mb-5 flex">
+                <div class="mb-5 flex max-sm:flex-col">
                     <label for="email"
-                        class="w-2/5 text-right mx-4 content-center mb-2 text-regular font-gothic dark:text-white">Phone
+                        class="w-2/5 max-sm:w-full max-sm:text-left text-right sm:mx-0 lg:mx-4 content-center mb-2 text-regular font-gothic dark:text-white">Phone
                         Number :</label>
                     <input type="email" id="email"
-                        class="border border-gray-300 mx-4 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        class="border border-gray-300 sm:mx-4 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required />
                 </div>
-                <div class="mb-5 flex">
+                <div class="mb-5 flex max-sm:flex-col">
                     <label for="email"
-                        class="w-2/5 text-right mx-4 content-center mb-2 text-regular font-gothic dark:text-white">Message
+                        class="w-2/5 max-sm:w-full max-sm:text-left text-right sm:mx-0 lg:mx-4 content-center mb-2 text-regular font-gothic dark:text-white">Message
                         Subject :</label>
                     <input type="email" id="email"
-                        class="border border-gray-300 mx-4 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        class="border border-gray-300 sm:mx-4 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required />
                 </div>
-                <div class="mb-5 flex">
+                <div class="mb-5 flex max-sm:flex-col">
                     <label for="message"
-                        class="w-2/5 text-right mx-4 content-center mb-2 text-regular font-gothic dark:text-white">Message :</label>
+                        class="w-2/5 max-sm:w-full max-sm:text-left text-right sm:mx-0 lg:mx-4 content-center mb-2 text-regular font-gothic dark:text-white">Message :</label>
                     <textarea id="message" rows="4"
-                        class="block p-2.5 w-full text-sm text-gray-900 mx-4 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                        class="block p-2.5 w-full text-sm text-gray-900 sm:mx-4 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
                 </div>
                 <div class="flex justify-end">
                     <div class="flex items-start mb-5">
@@ -99,6 +174,8 @@
             </ul>
         </div>
     </footer>
+
+    <script src="navbar.js"></script>
 </body>
 
 </html>
