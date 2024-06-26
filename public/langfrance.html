@@ -7,18 +7,93 @@
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" href="/image/logo-casa.png" type="image/png">
-    <title>Document</title>
+    <title>Casa Evaliza</title>
     <link href="css/output.css" rel="stylesheet">
 </head>
 
 <body>
+    <nav class="shadow-lg">
+        <div class="mx-28 px-4 hidden xl:block ">
+            <div class="flex flex-col">
+                <div class="pt-8 flex gap-20 items-center">
+                    <hr class="w-full h-px bg-regular border-0 rounded grow">
+                    <a href="langfrance.html" class="border rounded-sm border-regular p-0.5"><img
+                            src="/image/IMG-20240618-WA0004.jpg" class="w-7" alt=""></a>
+                </div>
+                <div class="flex items-center justify-between mb-1.5">
+                    <a href="index.html"><img src="/image/IMG-20240618-WA0005.jpg" class="w-52" alt=""></a>
+                    <div class="">
+                        <ul class="flex">
+                            <li
+                                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                                <a href="about.html">About Casa Evaliza</a>
+                            </li>
+                            <li
+                                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                                <a href="acco.html">Accommodation</a>
+                            </li>
+                            <li
+                                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                                <a href="facilities.html">Facilities</a>
+                            </li>
+                            <li
+                                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li
+                                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                                <a href="location.html">Location</a>
+                            </li>
+                            <li
+                                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                                <a href="galery.html">Galery</a>
+                            </li>
+                            <li
+                                class="pl-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider">
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="block xl:hidden items-center fixed top-0 left-0 right-0 z-40 shadow-lg bg-white">
+        <div class="flex justify-between px-5 py-2 items-center">
+            <div id="hamburgerMenu" class="space-y-1 pl-2 cursor-pointer">
+                <div class="bar w-6 h-0.5 rounded bg-regular transition-transform duration-300 ease-in-out"></div>
+                <div class="bar w-6 h-0.5 rounded bg-regular transition-transform duration-300 ease-in-out"></div>
+                <div class="bar w-6 h-0.5 rounded bg-regular transition-transform duration-300 ease-in-out"></div>
+            </div>
+            <a href="index.html"><img src="/image/IMG-20240618-WA0005.jpg" class="w-40" alt=""></a>
+            <img id="moreVert" src="/image/more_vert.png" class="size-8 cursor-pointer" alt="">
+        </div>
+        <div id="hiddenImage" class="absolute right-0 top-full rounded-b-lg bg-white p-4 shadow-lg transition-transform duration-300 ease-in-out transform translate-x-full">
+            <a href="langfrance.html"><img src="/image/IMG-20240618-WA0004.jpg" alt=""></a>
+        </div>
+        <!-- Sidebar -->
+        <div id="sidebar" class="absolute top-full left-0 h-screen w-64 bg-white text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-20">
+            <div class="p-4">
+                <ul>
+                    <li class="py-2 ml-3"><a href="about.html" class="font-gothic text-regular tracking-wider">About Casa Evaliza</a></li>
+                    <li class="py-2 ml-3"><a href="acco.html" class="font-gothic text-regular tracking-wider">Accommodation</a></li>
+                    <li class="py-2 ml-3"><a href="facilities.html" class="font-gothic text-regular tracking-wider">Facilities</a></li>
+                    <li class="py-2 ml-3"><a href="services.html" class="font-gothic text-regular tracking-wider">Services</a></li>
+                    <li class="py-2 ml-3"><a href="location.html" class="font-gothic text-regular tracking-wider">Location</a></li>
+                    <li class="py-2 ml-3"><a href="galery.html" class="font-gothic text-regular tracking-wider">Gallery</a></li>
+                    <li class="py-2 ml-3"><a href="contact.html" class="font-gothic text-regular tracking-wider">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <section class="my-5 flex flex-wrap">
         <div class="w-screen h-screen flex items-center justify-center">
-            <img src="/image/IMG-20240618-WA0009.jpg" class="object-cover w-full h-full"/>
+            <img src="/image/pantai.jpg" class="object-cover w-full h-full"/>
         </div>
     </section>
 
-    <section class="my-20 mx-10">
+    <section class="my-20 mx-5 md:mx-44">
         <div class="py-5 px-4 mx-10">
             <h1 class="font-gothicBold text-3xl mb-5 font-bold text-bold">Casa Evaliza</h1>
             <p class="py-6 mb-1 font-gothic tracking-widest text-lg leading-10 text-regular">Casa Evaliza est une spacieuse villa située à 250 mètres de la plage faisant face aux hôtels et restaurants de luxe du quartier de Seminyak/Oberoi. L'accès se fait par une allée privée menant également aux suites de l'hôtel Legian. Evaliza a été totalement redécorée en 2009 et elle est une des villas pris ée de la région avec son style colonial mélangeant harmonieusement le traditionnel local et le contemporain.</p>
@@ -74,6 +149,23 @@
             <p class="py-6 mb-1 font-gothic tracking-widest text-lg leading-10 text-regular">Pour rejoindre l'aéroport de la villa, il faut compter une trentaine de minute</p>
         </div>
     </section>
+    <footer class="rounded-t-lg bg-bold">
+        <div class="w-full mx-auto max-w-screen-xl p-4 flex items-center justify-between">
+            <br>
+            <ul class="flex flex-wrap items-center text-sm font-medium text-slate-300">
+                <li>
+                    <a href="link.html" class="hover:underline me-4 font-gothic md:me-6">Link</a>
+                </li>
+                <li>
+                    <a href="press.html" class="hover:underline me-4 font-gothic md:me-6">Press</a>
+                </li>
+                <li>
+                    <a href="sitemap.html" class="hover:underline me-4 font-gothic md:me-6">Sitemap</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="navbar.js"></script>
 </body>
 
 </html>

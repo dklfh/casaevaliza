@@ -9,21 +9,103 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="icon" href="/image/logo-casa.png" type="image/png">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-  <title>Document</title>
+  <title>Casa Evaliza</title>
   <link href="css/output.css" rel="stylesheet">
 </head>
 
 <body>
+  <nav class="shadow-lg">
+    <div class="mx-28 px-4 hidden xl:block ">
+      <div class="flex flex-col">
+        <div class="pt-8 flex gap-20 items-center">
+          <hr class="w-full h-px bg-regular border-0 rounded grow">
+          <a href="langfrance.html" class="border rounded-sm border-regular p-0.5"><img
+              src="/image/IMG-20240618-WA0004.jpg" class="w-7" alt=""></a>
+        </div>
+        <div class="flex items-center justify-between mb-1.5">
+          <a href="index.html"><img src="/image/IMG-20240618-WA0005.jpg" class="w-52" alt=""></a>
+          <div class="">
+            <ul class="flex">
+              <li
+                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                <a href="about.html">About Casa Evaliza</a>
+              </li>
+              <li
+                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                <a href="acco.html">Accommodation</a>
+              </li>
+              <li
+                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                <a href="facilities.html">Facilities</a>
+              </li>
+              <li
+                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                <a href="services.html">Services</a>
+              </li>
+              <li
+                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                <a href="location.html">Location</a>
+              </li>
+              <li
+                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                <a href="galery.html">Galery</a>
+              </li>
+              <li
+                class="pl-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider">
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="block xl:hidden items-center fixed top-0 left-0 right-0 z-40 shadow-lg bg-white">
+    <div class="flex justify-between px-5 py-2 items-center">
+      <div id="hamburgerMenu" class="space-y-1 pl-2 cursor-pointer">
+        <div class="bar w-6 h-0.5 rounded bg-regular transition-transform duration-300 ease-in-out"></div>
+        <div class="bar w-6 h-0.5 rounded bg-regular transition-transform duration-300 ease-in-out"></div>
+        <div class="bar w-6 h-0.5 rounded bg-regular transition-transform duration-300 ease-in-out"></div>
+      </div>
+      <a href="index.html"><img src="/image/IMG-20240618-WA0005.jpg" class="w-40" alt=""></a>
+      <img id="moreVert" src="/image/more_vert.png" class="size-8 cursor-pointer" alt="">
+    </div>
+    <div id="hiddenImage"
+      class="absolute right-0 top-full rounded-b-lg bg-white p-4 shadow-lg transition-transform duration-300 ease-in-out transform translate-x-full">
+      <a href="langfrance.html"><img src="/image/IMG-20240618-WA0004.jpg" alt=""></a>
+    </div>
+    <!-- Sidebar -->
+    <div id="sidebar"
+      class="absolute top-full left-0 h-screen w-64 bg-white text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-20">
+      <div class="p-4">
+        <ul>
+          <li class="py-2 ml-3"><a href="about.html" class="font-gothic text-regular tracking-wider">About Casa
+              Evaliza</a></li>
+          <li class="py-2 ml-3"><a href="acco.html" class="font-gothic text-regular tracking-wider">Accommodation</a>
+          </li>
+          <li class="py-2 ml-3"><a href="facilities.html" class="font-gothic text-regular tracking-wider">Facilities</a>
+          </li>
+          <li class="py-2 ml-3"><a href="services.html" class="font-gothic text-regular tracking-wider">Services</a>
+          </li>
+          <li class="py-2 ml-3"><a href="location.html" class="font-gothic text-regular tracking-wider">Location</a>
+          </li>
+          <li class="py-2 ml-3"><a href="galery.html" class="font-gothic text-regular tracking-wider">Gallery</a></li>
+          <li class="py-2 ml-3"><a href="contact.html" class="font-gothic text-regular tracking-wider">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <section class="my-5 flex flex-wrap">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap">
-      <div class="py-12 px-4 mx-28">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap justify-center">
+      <div class="py-12 px-4">
         <br><br>
-        <a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModalCenter"><img
+        <a href="./ourgallery.html" data-toggle="modal" data-target="#exampleModalCenter"><img
             src="/image/apalah.jpg"></a>
         <h1 class="font-gothic my-5 text-3xl mb-5 text-regular">Photo Gallery</h1>
       </div>
 
-      <div class="py-12 px-4 mx-28">
+      <div class="py-12 px-4">
         <br><br>
         <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button">
           <img src="/image/IMG-20240618-WA0013.jpg" alt="Virtual Tour Image">
@@ -31,93 +113,163 @@
         <h1 class="font-gothic my-5 text-3xl mb-5 text-regular">Virtual Tour</h1>
       </div>
 
-      <div class="py-12 px-4 mx-28">
-        <br><br>
-        <a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModalCenter"><img
-            src="/image/IMG-20240618-WA0008.jpg"></a>
-        <h1 class="font-gothic my-5 text-3xl mb-5 text-regular">Floor Plan
-        </h1>
+      <div class="py-12 px-4 ">
+        <a href="javascript:void(0)" onclick="openModal()">
+          <img src="/image/IMG-20240618-WA0008.jpg" alt="floorPlan">
+        </a>
+        <h1 class="font-gothic my-5 text-3xl mb-5 text-regular">Floor Plan</h1>
       </div>
-    </div>
-  </section>
+
+      <div id="modal"
+        class="modal fixed top-0 left-0 z-50 flex justify-center items-center w-full h-full bg-black bg-opacity-50">
+        <button class="fixed z-90 top-6 right-8 text-white text-5xl font-bold bg-transparent border-none"
+          onclick="closeModal()">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <a id="zoomButton" class="fixed z-90 top-6 right-20 text-white" href="#" onclick="toggleZoom()">
+          <svg xmlns="http://www.w3.org/2000/svg" class="size-6" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 16a6 6 0 100-12 6 6 0 000 12z" clip-rule="evenodd" />
+            <path fill-rule="evenodd" d="M14.643 14.122l3.72 3.72a1 1 0 11-1.414 1.414l-3.72-3.72a8 8 0 111.414-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+
+        <div class="mt-4">
+          <img id="modal-image" src="/image/casa-vila-6.jpg" onclick="toggleZoom()" alt="Modal Image"
+            class="p-4 w-full max-w-2xl max-h-full transform scale-100 transition-transform duration-300">
+        </div>
+      </div>
+    </section>
+    <footer class="rounded-t-lg bg-bold">
+      <div class="w-full mx-auto max-w-screen-xl p-4 flex items-center justify-between">
+          <br>
+          <ul class="flex flex-wrap items-center text-sm font-medium text-slate-300">
+              <li>
+                  <a href="link.html" class="hover:underline me-4 font-gothic md:me-6">Link</a>
+              </li>
+              <li>
+                  <a href="press.html" class="hover:underline me-4 font-gothic md:me-6">Press</a>
+              </li>
+              <li>
+                  <a href="sitemap.html" class="hover:underline me-4 font-gothic md:me-6">Sitemap</a>
+              </li>
+          </ul>
+      </div>
+  </footer>
 
 
-
-
-
-  <!-- Modal toggle -->
-  <!-- <button data-modal-target="default-modal" data-modal-toggle="default-modal"
+      <!-- Modal toggle -->
+      <!-- <button data-modal-target="default-modal" data-modal-toggle="default-modal"
     class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
     type="button">
     Toggle modal
   </button> -->
 
-  <!-- Main modal -->
-  <div id="default-modal" tabindex="-1" aria-hidden="true"
-    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-    <div class="relative p-4 w-full max-w-2xl max-h-full">
-      <!-- Modal content -->
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-        <!-- Modal header -->
-        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-            Virtual Tour
-          </h3>
-          <button type="button"
-            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-            data-modal-hide="default-modal">
-            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-            </svg>
-            <span class="sr-only">Close modal</span>
-          </button>
-        </div>
-        <!-- Modal body -->
-        <div class="p-4 md:p-5 space-y-4">
-
-          <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab"
-              data-tabs-toggle="#default-styled-tab-content"
-              data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
-              data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300"
-              role="tablist">
-              <li class="me-2" role="presentation">
-                <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-styled-tab"
-                  data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile"
-                  aria-selected="false">Profile</button>
-              </li>
-              <li class="me-2" role="presentation">
-                <button
-                  class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-                  id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab"
-                  aria-controls="dashboard" aria-selected="false">Dashboard</button>
-              </li>
-            </ul>
-          </div>
-          <!-- content modal -->
-          <div id="default-styled-tab-content">
-            <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel"
-              aria-labelledby="profile-tab">
-              <div class="relative w-full h-auto overflow-hidden cursor-move" id="draggable-container">
-                <img src="/image/vr1.jpg" alt="Image 1" class="max-w-7xl" id="draggable-image">
+      <!-- Main modal -->
+      <div id="default-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                Virtual Tour
+              </h3>
+              <button type="button"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="default-modal">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 14 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
             </div>
+            <!-- Modal body -->
+            <div class="p-4 md:p-5 space-y-4">
 
-            </div>
-            <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel"
-              aria-labelledby="dashboard-tab">
-              <div class="relative w-full h-auto overflow-hidden cursor-move">
-                <img src="/image/vr2.jpg" alt="Image 2" class="">
+              <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab"
+                  data-tabs-toggle="#default-styled-tab-content"
+                  data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
+                  data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300"
+                  role="tablist">
+                  <li class="me-2" role="presentation">
+                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-styled-tab"
+                      data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile"
+                      aria-selected="false">Poster bed and balcony</button>
+                  </li>
+                  <li class="me-2" role="presentation">
+                    <button
+                      class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                      id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab"
+                      aria-controls="dashboard" aria-selected="false">View more master</button>
+                  </li>
+                </ul>
+              </div>
+              <!-- content modal -->
+              <div id="default-styled-tab-content">
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel"
+                  aria-labelledby="profile-tab">
+                  <div class="relative w-full h-auto overflow-hidden cursor-move" id="draggable-container">
+                    <img src="/image/vr1.jpg" alt="Image 1" class="max-w-7xl" id="draggable-image">
+                  </div>
+
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel"
+                  aria-labelledby="dashboard-tab">
+                  <div class="relative w-full h-auto overflow-hidden cursor-move">
+                    <img src="/image/vr2.jpg" alt="Image 2" class="">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+      
 
-  <script src="mousemove.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+      <script>
+        function openModal() {
+          document.getElementById('modal').style.display = 'flex';
+        }
+        // Add a check to prevent the modal from appearing automatically on page load
+        var modalTriggered = false;
+        if (!modalTriggered) {
+          modal.style.display = 'none'; // Hide the modal by default
+        }
+
+        function closeModal() {
+          document.getElementById('modal').style.display = 'none';
+        }
+
+        var zoomFactor = 2; // Faktor perbesaran (dua kali lipat)
+
+        function toggleZoom() {
+          var modalImage = document.getElementById('modal-image');
+          var isZoomed = modalImage.classList.contains('zoomed');
+
+          // Jika sudah diperbesar, kembalikan ukuran gambar ke ukuran aslinya
+          if (isZoomed) {
+            modalImage.style.transform = 'scale(1)';
+            modalImage.classList.remove('zoomed');
+          } else {
+            // Jika belum diperbesar, perbesar gambar menjadi dua kali lipat
+            modalImage.style.transform = 'scale(' + zoomFactor + ')';
+            modalImage.classList.add('zoomed');
+          }
+        }
+      </script>
+
+      <script src="mousemove.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+      <script src="navbar.js"></script>
+
 </body>
 
 </html>
