@@ -97,31 +97,31 @@
     </div>
   </nav>
   <section class="my-5 flex flex-wrap">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap justify-center">
-      <div class="py-12 px-4">
+    <div class="container px-5 mx-auto flex flex-wrap justify-center">
+      <div class=" px-4">
         <br><br>
         <a href="./ourgallery.html" data-toggle="modal" data-target="#exampleModalCenter"><img
-            src="/image/apalah.jpg"></a>
+            src="/image/apalah.jpg" class="rounded-xl"></a>
         <h1 class="font-gothic my-5 text-3xl mb-5 text-regular">Photo Gallery</h1>
       </div>
 
-      <div class="py-12 px-4">
+      <div class=" px-4">
         <br><br>
-        <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button">
-          <img src="/image/IMG-20240618-WA0013.jpg" alt="Virtual Tour Image">
-        </button>
-        <h1 class="font-gothic my-5 text-3xl mb-5 text-regular">Virtual Tour</h1>
+        <a href="./event.html"><img
+            src="/image/event23.png" class="rounded-xl"></a>
+        <h1 class="font-gothic my-5 text-3xl mb-5 text-regular">Event In Our Area</h1>
       </div>
+    
 
       <div class="py-12 px-4 ">
         <a href="javascript:void(0)" onclick="openModal()">
-          <img src="/image/IMG-20240618-WA0008.jpg" alt="floorPlan">
+          <img src="/image/IMG-20240618-WA0008.jpg" class="rounded-xl" alt="floorPlan">
         </a>
         <h1 class="font-gothic my-5 text-3xl mb-5 text-regular">Floor Plan</h1>
       </div>
 
       <div id="modal"
-        class="modal fixed top-0 left-0 z-50 flex justify-center items-center w-full h-full bg-black bg-opacity-50">
+        class="fixed z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 items-center flex justify-center 0">
         <button class="fixed z-90 top-6 right-8 text-white text-5xl font-bold bg-transparent border-none"
           onclick="closeModal()">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -138,7 +138,7 @@
         </a>
 
         <div class="mt-4">
-          <img id="modal-image" src="/image/casa-vila-6.jpg" onclick="toggleZoom()" alt="Modal Image"
+          <img id="modal-image" src="/image/floorplan.jpg" onclick="toggleZoom()" alt="Modal Image"
             class="p-4 w-full max-w-2xl max-h-full transform scale-100 transition-transform duration-300">
         </div>
       </div>
@@ -159,81 +159,6 @@
           </ul>
       </div>
   </footer>
-
-
-      <!-- Modal toggle -->
-      <!-- <button data-modal-target="default-modal" data-modal-toggle="default-modal"
-    class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-    type="button">
-    Toggle modal
-  </button> -->
-
-      <!-- Main modal -->
-      <div id="default-modal" tabindex="-1" aria-hidden="true"
-        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-        <div class="relative p-4 w-full max-w-2xl max-h-full">
-          <!-- Modal content -->
-          <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-            <!-- Modal header -->
-            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                Virtual Tour
-              </h3>
-              <button type="button"
-                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                data-modal-hide="default-modal">
-                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 14 14">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                </svg>
-                <span class="sr-only">Close modal</span>
-              </button>
-            </div>
-            <!-- Modal body -->
-            <div class="p-4 md:p-5 space-y-4">
-
-              <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab"
-                  data-tabs-toggle="#default-styled-tab-content"
-                  data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
-                  data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300"
-                  role="tablist">
-                  <li class="me-2" role="presentation">
-                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-styled-tab"
-                      data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile"
-                      aria-selected="false">Poster bed and balcony</button>
-                  </li>
-                  <li class="me-2" role="presentation">
-                    <button
-                      class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-                      id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab"
-                      aria-controls="dashboard" aria-selected="false">View more master</button>
-                  </li>
-                </ul>
-              </div>
-              <!-- content modal -->
-              <div id="default-styled-tab-content">
-                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel"
-                  aria-labelledby="profile-tab">
-                  <div class="relative w-full h-auto overflow-hidden cursor-move" id="draggable-container">
-                    <img src="/image/vr1.jpg" alt="Image 1" class="max-w-7xl" id="draggable-image">
-                  </div>
-
-                </div>
-                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel"
-                  aria-labelledby="dashboard-tab">
-                  <div class="relative w-full h-auto overflow-hidden cursor-move">
-                    <img src="/image/vr2.jpg" alt="Image 2" class="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-
       <script>
         function openModal() {
           document.getElementById('modal').style.display = 'flex';
