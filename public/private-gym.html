@@ -122,6 +122,85 @@
             <div class="lg:pr-4 lg:pl-12 w-full md:pl-3">
                 <h2 class="font-gothic text-bold text-2xl font-black tracking-wide hidden lg:block lg:text-4xl">Private Gym</h2>
                 <p class="text-justify font-gothic text-regular py-12 mb-4 leading-loose tracking-custom sm:px-8 lg:px-0 max-sm:px-4">Just because you are on holiday doesn’t mean that your fitness regimen has to take a break as well. At Casa Evaliza you will find a state-of-the-art, air-conditioned private gym room with weights, treadmill and other equipments. <br> <br> When the body feels tired, perhaps a body scrub or massage might help to relieve all the weary. Just ask our staff to bring the spa to you! We can recommend deluxe treatments by a reputable carried out in the villa’s spa room by fully trained therapists from a reputable local spa company (extra charges will apply).</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="h-min w-full">
+                      <img data-modal-target="modal" class="object-cover cursor-pointer" src="image/casa-vila-1.jpg" alt="Img 1"
+                        id="img1" />
+                    </div>
+                    <div class="h-min w-full">
+                      <img class="object-cover" data-modal-target="modal" src="image/casa-vila-2.jpg" />
+                    </div>
+                    <div class="h-min w-full">
+                      <img class="object-cover" data-modal-target="modal" src="image/casa-vila-7.jpg" />
+                    </div>
+                    <div class="h-min w-full">
+                      <img class="object-cover" data-modal-target="modal" src="image/casa-vila-3.jpg" />
+                    </div>
+                    <div class="h-min w-full">
+                      <img class="object-cover" src="image/casa-vila-6.jpg" data-modal-target="modal" />
+                    </div>
+                    <div class="h-min w-full">
+                      <img class="object-cover" src="image/casa-vila-5.jpg" data-modal-target="modal" />
+                    </div>
+                    <div class="h-min w-full">
+                      <img class="object-cover" src="image/casa-vila-8.jpg" data-modal-target="modal" />
+                    </div>
+                    <div class="h-min w-full">
+                      <img class="object-cover" src="image/casa-vila-9.jpg" data-modal-target="modal" />
+                    </div>
+                    <div class="h-min w-full">
+                      <img class="object-cover" src="image/casa-vila-10.jpg" data-modal-target="modal" />
+                    </div>
+                    <div class="h-min w-full">
+                      <img class="object-cover" src="image/casa-vila-14.jpg" data-modal-target="modal" />
+                    </div>
+                    <div class="h-min w-full">
+                      <img class="object-cover" src="image/casa-vila-15.jpg" data-modal-target="modal" />
+                    </div>
+                    <div class="h-min w-full">
+                      <img class="object-cover" src="image/casa-vila-16.jpg" data-modal-target="modal" />
+                    </div>
+                    <div class="h-min w-full">
+                      <img class="object-cover" src="image/casa-vila-21.jpg" data-modal-target="modal" />
+                    </div>
+                    <div class="h-min w-full">
+                      <img class="object-cover" src="image/casa-vila-20.jpg" data-modal-target="modal" />
+                    </div>
+                    <!-- The Modal -->
+                    <div id="modal"
+                      class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 items-center flex justify-center 0">
+                      <div>
+                        <div class="modal-conten w-full max-w-2xl max-h-full rounded-lg shadow-lg relative">
+                        </div>
+                        <!-- The close button -->
+                        <button class="fixed z-90 top-6 right-8 text-white text-5xl font-bold bg-transparent border-none"
+                          onclick="closeModal()">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                        </button>
+              
+                        <button
+                          class="absolute top-1/2 -translate-y-1/2 left-4 bg-gray-200 rounded-full p-2 text-gray-800 hover:bg-gray-300 focus:outline-none"
+                          onclick="prevImage()">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                          </svg>
+                        </button>
+                        <button
+                          class="absolute top-1/2 -translate-y-1/2 right-4 bg-gray-200 rounded-full p-2 text-gray-800 hover:bg-gray-300 focus:outline-none"
+                          onclick="nextImage()">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </button>
+                        <img id="modal-img" class="p-4 w-full max-w-2xl max-h-full" />
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
     </section>
@@ -143,7 +222,68 @@
         </div>
     </footer>
 
-
+    <script>
+        // Get the modal element
+        var modal = document.getElementById('modal');
+        // Get all images that have a data-modal-target attribute
+        var images = document.querySelectorAll('[data-modal-target]');
+        // Initialize index to keep track of the current image
+        var currentIndex = 0;
+    
+        // Add click event listeners to each image
+        //...
+    
+        // Add click event listeners to each image
+        images.forEach(function (image, index) {
+          image.addEventListener('click', function () {
+            currentIndex = index; // Set the current index based on clicked image
+            var modalImg = document.getElementById('modal-img');
+            modalImg.src = this.src;
+            modal.style.display = 'flex'; // Display the modal
+            modalTriggered = true; // Set a flag to indicate that the modal was triggered by a user click
+          });
+        });
+    
+        //...
+    
+        // Function to close the modal
+        function closeModal() {
+          modal.style.display = 'none'; // Hide the modal
+          modalTriggered = false; // Reset the flag
+        }
+    
+        //...
+    
+        // Add a check to prevent the modal from appearing automatically on page load
+        var modalTriggered = false;
+        if (!modalTriggered) {
+          modal.style.display = 'none'; // Hide the modal by default
+        }
+    
+        // Function to show previous image
+        function prevImage() {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          var modalImg = document.getElementById('modal-img');
+          modalImg.src = images[currentIndex].src;
+        }
+    
+        // Function to show next image
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          var modalImg = document.getElementById('modal-img');
+          modalImg.src = images[currentIndex].src;
+        }
+    
+        // Event listener for mouse wheel scroll
+        modal.addEventListener('wheel', function (e) {
+          e.preventDefault();
+          if (e.deltaY < 0) {
+            prevImage();
+          } else {
+            nextImage();
+          }
+        });
+      </script>
     <script src="navbar.js"></script>
     <script src="hover.js"></script>
 </body>
