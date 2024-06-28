@@ -1,346 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="icon" href="image/logo-casa.png" type="image/png">
-    <link rel="stylesheet" href="css/output.css">
-    <title>Casa Evaliza</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="image/logo-casa.png" type="image/png">
+  <link rel="stylesheet" href="css/output.css">
+  <title>Casa Evaliza</title>
 </head>
+
 <body>
-    <nav class="shadow-lg">
-        <div class="mx-28 px-4 hidden xl:block ">
-            <div class="flex flex-col">
-                <div class="pt-8 flex gap-20 items-center">
-                    <hr class="w-full h-px bg-regular border-0 rounded grow">
-                    <a href="langfrance.html" id="nav-langfrance" class="border rounded-sm border-regular p-0.5"><img
-                            src="image/IMG-20240618-WA0004.jpg" class="w-7" alt=""></a>
+  <nav class="shadow-lg">
+    <div class="mx-28 px-4 hidden xl:block ">
+      <div class="flex flex-col">
+        <div class="pt-8 flex gap-20 items-center">
+          <hr class="w-full h-px bg-regular border-0 rounded grow">
+          <a href="langfrance.html" id="nav-langfrance" class="border rounded-sm border-regular p-0.5"><img
+              src="image/IMG-20240618-WA0004.jpg" class="w-7" alt=""></a>
+        </div>
+        <div class="flex items-center justify-between mb-1.5">
+          <a href="index.html"><img src="image/IMG-20240618-WA0005.jpg" class="w-52" alt=""></a>
+          <div class="">
+            <ul class="flex">
+              <li id="nav-about"
+                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                <a href="about.html">About Casa Evaliza</a>
+              </li>
+              <li id="nav-acco"
+                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular relative">
+                <a href="acco.html">Accommodation</a>
+                <div id="dropdownNavbar"
+                  class="z-40 absolute hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="master-suite.html" id="nav-master-suite"
+                        class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Master
+                        Suite</a>
+                    </li>
+                    <li>
+                      <a href="guest-badroom.html" id="nav-guest-badroom"
+                        class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Guest
+                        Badroom</a>
+                    </li>
+                    <li>
+                      <a href="living-dining-pavilon.html" id="nav-living-dining-pavilon"
+                        class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Living
+                        & Dining Pavilion</a>
+                    </li>
+                    <li>
+                      <a href="media-room.html" id="nav-media-room"
+                        class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Media
+                        Room</a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="flex items-center justify-between mb-1.5">
-                    <a href="index.html"><img src="image/IMG-20240618-WA0005.jpg" class="w-52" alt=""></a>
-                    <div class="">
-                        <ul class="flex">
-                            <li id="nav-about"
-                                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
-                                <a href="about.html">About Casa Evaliza</a>
-                            </li>
-                            <li id="nav-acco" class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular relative">
-                                <a href="acco.html">Accommodation</a>
-                                <div id="dropdownNavbar"
-                                    class="z-40 absolute hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                                        <li>
-                                            <a href="master-suite.html" id="nav-master-suite"
-                                                class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Master Suite</a>
-                                        </li>
-                                        <li>
-                                            <a href="guest-badroom.html" id="nav-guest-badroom"
-                                                class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Guest Badroom</a>
-                                        </li>
-                                        <li>
-                                            <a href="living-dining-pavilon.html" id="nav-living-dining-pavilon"
-                                                class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Living & Dining Pavilion</a>
-                                        </li>
-                                        <li>
-                                            <a href="media-room.html" id="nav-media-room"
-                                                class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Media Room</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li id="nav-facilities" class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular relative">
-                                <a href="facilities.html">Facilities</a>
-                                <div id="dropdownNavbar"
-                                    class="z-40 absolute hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                                        <li>
-                                            <a href="kithen.html" id="nav-kitchen"
-                                                class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Kitchen</a>
-                                        </li>
-                                        <li>
-                                            <a href="swimming-pool.html" id="nav-swimming-pool"
-                                                class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Swimming Pool & Garden</a>
-                                        </li>
-                                        <li>
-                                            <a href="private-gym.html" id="nav-private-gym"
-                                                class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Private Gym</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li id="nav-services" class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular relative">
-                                <a href="services.html">Services</a>
-                                <div id="dropdownNavbar"
-                                    class="z-40 absolute hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                                        <li>
-                                            <a href="food-beverages.html" id="nav-food-beverages"
-                                                class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Food & Beverages</a>
-                                        </li>
-                                        <li>
-                                            <a href="spa-services.html" id="nav-services"
-                                                class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Spa Services</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li id="nav-location"
-                                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
-                                <a href="location.html">Location</a>
-                            </li>
-                            <li id="nav-gallery"
-                                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
-                                <a href="galery.html">Gallery</a>
-                            </li>
-                            <li id="nav-contact"
-                                class="pl-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider">
-                                <a href="contact.html">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
+              </li>
+              <li id="nav-facilities"
+                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular relative">
+                <a href="facilities.html">Facilities</a>
+                <div id="dropdownNavbar"
+                  class="z-40 absolute hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="kithen.html" id="nav-kitchen"
+                        class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Kitchen</a>
+                    </li>
+                    <li>
+                      <a href="swimming-pool.html" id="nav-swimming-pool"
+                        class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Swimming
+                        Pool & Garden</a>
+                    </li>
+                    <li>
+                      <a href="private-gym.html" id="nav-private-gym"
+                        class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Private
+                        Gym</a>
+                    </li>
+                  </ul>
                 </div>
-            </div>
-        </div>
-    </nav>
-    <nav class="block xl:hidden items-center fixed top-0 left-0 right-0 z-50 shadow-lg bg-white">
-        <div class="flex justify-between px-5 py-2 items-center">
-            <div id="hamburgerMenu" class="space-y-1 pl-2 cursor-pointer">
-                <div class="bar w-6 h-0.5 rounded bg-regular transition-transform duration-300 ease-in-out"></div>
-                <div class="bar w-6 h-0.5 rounded bg-regular transition-transform duration-300 ease-in-out"></div>
-                <div class="bar w-6 h-0.5 rounded bg-regular transition-transform duration-300 ease-in-out"></div>
-            </div>
-            <a href="index.html"><img src="image/IMG-20240618-WA0005.jpg" class="w-40" alt=""></a>
-            <a href="langfrance.html" id="nav-langfrance" class="border rounded-sm border-regular p-0.5"><img src="image/IMG-20240618-WA0004.jpg" class="w-10" alt=""></a>
-        </div>
-        <!-- Sidebar -->
-        <div id="sidebar"
-            class="absolute top-full left-0 h-screen w-64 bg-white text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-30">
-            <div class="p-4">
-                <ul>
-                    <li class="py-2 ml-3"><a href="about.html" class="font-gothic text-regular tracking-wider">About
-                            Casa Evaliza</a></li>
-                    <li id="nav-acco" class="py-2 ml-3"><a href="acco.html"
-                            class="font-gothic text-regular tracking-wider">Accommodation</a></li>
-                    <li id="nav-facilities" class="py-2 ml-3"><a href="facilities.html"
-                            class="font-gothic text-regular tracking-wider">Facilities</a></li>
-                    <li id="nav-services" class="py-2 ml-3"><a href="services.html"
-                            class="font-gothic text-regular tracking-wider">Services</a></li>
-                    <li id="nav-location" class="py-2 ml-3"><a href="location.html"
-                            class="font-gothic text-regular tracking-wider">Location</a></li>
-                    <li id="nav-gallery" class="py-2 ml-3"><a href="galery.html"
-                            class="font-gothic text-regular tracking-wider">Gallery</a></li>
-                    <li id="nav-contact" class="py-2 ml-3"><a href="contact.html" class="font-gothic text-regular tracking-wider">Contact
-                            Us</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="backdrop" class="absolute top-full left-0 h-[calc(100vh-3.5rem)] w-full bg-black bg-opacity-50 backdrop backdrop-blur-sm hidden z-20"></div>
-    </nav>
-
-    <section>
-        <img src="image/villagym.jpg" class="w-full h-lvh object-cover" alt="">
-    </section>
-
-    <section class="lg:my-12 sm:mb-12 sm:mt-0 max-sm:mb-12 max-sm:mt-0">
-        <div class="mb-8 py-10 px-8 drop-shadow-lg bg-white hidden max-sm:block sm:block md:block lg:hidden">
-            <p class="text-3xl font-gothic text-bold font-black tracking-wide">Private Gym</p>
-        </div>
-        <div class="lg:mx-8 lg:py-12 px-4 lg:flex lg:flex-row sm:flex-col sm:mx-9 sm:py-0 max-sm:flex-col max-sm:mx-0 max-sm:py-0 xl:mx-20">
-            <div class="pr-10 pl-4 max-w-96 sm:h-fit max-sm:h-fit max-sm:pr-4">
-                <ul class="list-none">
-                    <li class="py-4 px-5 relative">
-                        <a href="kithen.html" class="font-gothic text-regular tracking-wider transition-colors hover:text-bold flex items-center">
-                            <span class="size-4 bg-cover bg-center mr-2 transition-opacity duration-300 ease-in opacity-0" style="background-image: url(image/logo-casa.png);"></span> 
-                            Kitchen
-                        </a>
+              </li>
+              <li id="nav-services"
+                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular relative">
+                <a href="services.html">Services</a>
+                <div id="dropdownNavbar"
+                  class="z-40 absolute hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="food-beverages.html" id="nav-food-beverages"
+                        class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Food
+                        & Beverages</a>
                     </li>
-                    <hr class="w-80 h-1 bg-gray-100 border-0 rounded dark:bg-gray-700 max-sm:w-64">
-                    <li class="py-4 px-5 relative">
-                        <a href="swimming-pool.html" class="font-gothic text-regular tracking-wider transition-colors hover:text-bold flex items-center">
-                            <span class="size-4 bg-cover bg-center mr-2 transition-opacity duration-300 ease-in opacity-0" style="background-image: url(image/logo-casa.png);"></span> 
-                            Swimming Pool & Garden
-                        </a>
+                    <li>
+                      <a href="spa-services.html" id="nav-services"
+                        class="block font-gothic text-regular tracking-wider font-bold px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Spa
+                        Services</a>
                     </li>
-                    <hr class="w-80 h-1 bg-gray-100 border-0 rounded dark:bg-gray-700 max-sm:w-64">
-                    <li class="py-4 px-5 relative">
-                        <a href="private-gym.html" class="font-gothic text-bold tracking-wider flex items-center gap-2">
-                            <img src="image/logo-casa.png" alt="">
-                            Private Gym
-                        </a>
-                    </li>
-                    <hr class="w-80 h-1 bg-gray-100 border-0 rounded dark:bg-gray-700 max-sm:w-64">
-                </ul>
-            </div>
-            <div class="lg:pr-4 lg:pl-12 w-full md:pl-3">
-                <h2 class="font-gothic text-bold text-2xl font-black tracking-wide hidden lg:block lg:text-4xl">Private Gym</h2>
-                <p class="text-justify font-gothic text-regular py-12 mb-4 leading-loose tracking-custom sm:px-8 lg:px-0 max-sm:px-4">Just because you are on holiday doesn’t mean that your fitness regimen has to take a break as well. At Casa Evaliza you will find a state-of-the-art, air-conditioned private gym room with weights, treadmill and other equipments. <br> <br> When the body feels tired, perhaps a body scrub or massage might help to relieve all the weary. Just ask our staff to bring the spa to you! We can recommend deluxe treatments by a reputable carried out in the villa’s spa room by fully trained therapists from a reputable local spa company (extra charges will apply).</p>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    <div class="h-min w-full">
-                      <img data-modal-target="modal" class="object-cover cursor-pointer" src="image/casa-vila-1.jpg" alt="Img 1"
-                        id="img1" />
-                    </div>
-                    <div class="h-min w-full">
-                      <img class="object-cover" data-modal-target="modal" src="image/casa-vila-2.jpg" />
-                    </div>
-                    <div class="h-min w-full">
-                      <img class="object-cover" data-modal-target="modal" src="image/casa-vila-7.jpg" />
-                    </div>
-                    <div class="h-min w-full">
-                      <img class="object-cover" data-modal-target="modal" src="image/casa-vila-3.jpg" />
-                    </div>
-                    <div class="h-min w-full">
-                      <img class="object-cover" src="image/casa-vila-6.jpg" data-modal-target="modal" />
-                    </div>
-                    <div class="h-min w-full">
-                      <img class="object-cover" src="image/casa-vila-5.jpg" data-modal-target="modal" />
-                    </div>
-                    <div class="h-min w-full">
-                      <img class="object-cover" src="image/casa-vila-8.jpg" data-modal-target="modal" />
-                    </div>
-                    <div class="h-min w-full">
-                      <img class="object-cover" src="image/casa-vila-9.jpg" data-modal-target="modal" />
-                    </div>
-                    <div class="h-min w-full">
-                      <img class="object-cover" src="image/casa-vila-10.jpg" data-modal-target="modal" />
-                    </div>
-                    <div class="h-min w-full">
-                      <img class="object-cover" src="image/casa-vila-14.jpg" data-modal-target="modal" />
-                    </div>
-                    <div class="h-min w-full">
-                      <img class="object-cover" src="image/casa-vila-15.jpg" data-modal-target="modal" />
-                    </div>
-                    <div class="h-min w-full">
-                      <img class="object-cover" src="image/casa-vila-16.jpg" data-modal-target="modal" />
-                    </div>
-                    <div class="h-min w-full">
-                      <img class="object-cover" src="image/casa-vila-21.jpg" data-modal-target="modal" />
-                    </div>
-                    <div class="h-min w-full">
-                      <img class="object-cover" src="image/casa-vila-20.jpg" data-modal-target="modal" />
-                    </div>
-                    <!-- The Modal -->
-                    <div id="modal"
-                      class="fixed z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 items-center flex justify-center 0">
-                      <div>
-                        <div class="modal-conten w-full max-w-2xl max-h-full rounded-lg shadow-lg relative">
-                        </div>
-                        <!-- The close button -->
-                        <button class="fixed z-90 top-6 right-8 text-white text-5xl font-bold bg-transparent border-none"
-                          onclick="closeModal()">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                          </svg>
-                        </button>
-              
-                        <button
-                          class="absolute top-1/2 -translate-y-1/2 left-4 bg-gray-200 rounded-full p-2 text-gray-800 hover:bg-gray-300 focus:outline-none"
-                          onclick="prevImage()">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                          </svg>
-                        </button>
-                        <button
-                          class="absolute top-1/2 -translate-y-1/2 right-4 bg-gray-200 rounded-full p-2 text-gray-800 hover:bg-gray-300 focus:outline-none"
-                          onclick="nextImage()">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                          </svg>
-                        </button>
-                        <img id="modal-img" class="p-4 w-full max-w-2xl max-h-full" />
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="rounded-t-lg bg-bold">
-        <div class="w-full mx-auto max-w-screen-xl p-4 flex items-center justify-between">
-            <br>
-            <ul class="flex flex-wrap items-center text-sm font-medium text-slate-300">
-                <li>
-                    <a href="link.html" class="hover:underline me-4 font-gothic md:me-6">Link</a>
-                </li>
-                <li>
-                    <a href="press.html" class="hover:underline me-4 font-gothic md:me-6">Press</a>
-                </li>
-                <li>
-                    <a href="sitemap.html" class="hover:underline me-4 font-gothic md:me-6">Sitemap</a>
-                </li>
+                  </ul>
+                </div>
+              </li>
+              <li id="nav-location"
+                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                <a href="location.html">Location</a>
+              </li>
+              <li id="nav-gallery"
+                class="border-r px-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider border-regular">
+                <a href="galery.html">Gallery</a>
+              </li>
+              <li id="nav-contact"
+                class="pl-4 font-gothic text-regular hover:text-bold transition-colors duration-300 ease-in-out font-bold tracking-wider">
+                <a href="contact.html">Contact Us</a>
+              </li>
             </ul>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </nav>
+  <nav class="block xl:hidden items-center fixed top-0 left-0 right-0 z-50 shadow-lg bg-white">
+    <div class="flex justify-between px-5 py-2 items-center">
+      <div id="hamburgerMenu" class="space-y-1 pl-2 cursor-pointer">
+        <div class="bar w-6 h-0.5 rounded bg-regular transition-transform duration-300 ease-in-out"></div>
+        <div class="bar w-6 h-0.5 rounded bg-regular transition-transform duration-300 ease-in-out"></div>
+        <div class="bar w-6 h-0.5 rounded bg-regular transition-transform duration-300 ease-in-out"></div>
+      </div>
+      <a href="index.html"><img src="image/IMG-20240618-WA0005.jpg" class="w-40" alt=""></a>
+      <a href="langfrance.html" id="nav-langfrance" class="border rounded-sm border-regular p-0.5"><img
+          src="image/IMG-20240618-WA0004.jpg" class="w-10" alt=""></a>
+    </div>
+    <!-- Sidebar -->
+    <div id="sidebar"
+      class="absolute top-full left-0 h-screen w-64 bg-white text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-30">
+      <div class="p-4">
+        <ul>
+          <li class="py-2 ml-3"><a href="about.html" class="font-gothic text-regular tracking-wider">About
+              Casa Evaliza</a></li>
+          <li id="nav-acco" class="py-2 ml-3"><a href="acco.html"
+              class="font-gothic text-regular tracking-wider">Accommodation</a></li>
+          <li id="nav-facilities" class="py-2 ml-3"><a href="facilities.html"
+              class="font-gothic text-regular tracking-wider">Facilities</a></li>
+          <li id="nav-services" class="py-2 ml-3"><a href="services.html"
+              class="font-gothic text-regular tracking-wider">Services</a></li>
+          <li id="nav-location" class="py-2 ml-3"><a href="location.html"
+              class="font-gothic text-regular tracking-wider">Location</a></li>
+          <li id="nav-gallery" class="py-2 ml-3"><a href="galery.html"
+              class="font-gothic text-regular tracking-wider">Gallery</a></li>
+          <li id="nav-contact" class="py-2 ml-3"><a href="contact.html"
+              class="font-gothic text-regular tracking-wider">Contact
+              Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="backdrop"
+      class="absolute top-full left-0 h-[calc(100vh-3.5rem)] w-full bg-black bg-opacity-50 backdrop backdrop-blur-sm hidden z-20">
+    </div>
+  </nav>
 
-    <script>
-        // Get the modal element
-        var modal = document.getElementById('modal');
-        // Get all images that have a data-modal-target attribute
-        var images = document.querySelectorAll('[data-modal-target]');
-        // Initialize index to keep track of the current image
-        var currentIndex = 0;
-    
-        // Add click event listeners to each image
-        //...
-    
-        // Add click event listeners to each image
-        images.forEach(function (image, index) {
-          image.addEventListener('click', function () {
-            currentIndex = index; // Set the current index based on clicked image
-            var modalImg = document.getElementById('modal-img');
-            modalImg.src = this.src;
-            modal.style.display = 'flex'; // Display the modal
-            modalTriggered = true; // Set a flag to indicate that the modal was triggered by a user click
-          });
-        });
-    
-        //...
-    
-        // Function to close the modal
-        function closeModal() {
-          modal.style.display = 'none'; // Hide the modal
-          modalTriggered = false; // Reset the flag
-        }
-    
-        //...
-    
-        // Add a check to prevent the modal from appearing automatically on page load
-        var modalTriggered = false;
-        if (!modalTriggered) {
-          modal.style.display = 'none'; // Hide the modal by default
-        }
-    
-        // Function to show previous image
-        function prevImage() {
-          currentIndex = (currentIndex - 1 + images.length) % images.length;
-          var modalImg = document.getElementById('modal-img');
-          modalImg.src = images[currentIndex].src;
-        }
-    
-        // Function to show next image
-        function nextImage() {
-          currentIndex = (currentIndex + 1) % images.length;
-          var modalImg = document.getElementById('modal-img');
-          modalImg.src = images[currentIndex].src;
-        }
-    
-        // Event listener for mouse wheel scroll
-        modal.addEventListener('wheel', function (e) {
-          e.preventDefault();
-          if (e.deltaY < 0) {
-            prevImage();
-          } else {
-            nextImage();
-          }
-        });
-      </script>
+  <section>
+    <img src="image/villagym.jpg" class="w-full h-lvh object-cover" alt="">
+  </section>
 
-    <script src="navactive.js"></script>
-    <script src="navbar.js"></script>
-    <script src="hover.js"></script>
+  <section class="lg:my-12 sm:mb-12 sm:mt-0 max-sm:mb-12 max-sm:mt-0">
+    <div class="mb-8 py-10 px-8 drop-shadow-lg bg-white hidden max-sm:block sm:block md:block lg:hidden">
+      <p class="text-3xl font-gothic text-bold font-black tracking-wide">Private Gym</p>
+    </div>
+    <div
+      class="lg:mx-8 lg:py-12 px-4 lg:flex lg:flex-row sm:flex-col sm:mx-9 sm:py-0 max-sm:flex-col max-sm:mx-0 max-sm:py-0 xl:mx-20">
+      <div class="pr-10 pl-4 max-w-96 sm:h-fit max-sm:h-fit max-sm:pr-4">
+        <ul class="list-none">
+          <li class="py-4 px-5 relative">
+            <a href="kithen.html"
+              class="font-gothic text-regular tracking-wider transition-colors hover:text-bold flex items-center">
+              <span class="size-4 bg-cover bg-center mr-2 transition-opacity duration-300 ease-in opacity-0"
+                style="background-image: url(image/logo-casa.png);"></span>
+              Kitchen
+            </a>
+          </li>
+          <hr class="w-80 h-1 bg-gray-100 border-0 rounded dark:bg-gray-700 max-sm:w-64">
+          <li class="py-4 px-5 relative">
+            <a href="swimming-pool.html"
+              class="font-gothic text-regular tracking-wider transition-colors hover:text-bold flex items-center">
+              <span class="size-4 bg-cover bg-center mr-2 transition-opacity duration-300 ease-in opacity-0"
+                style="background-image: url(image/logo-casa.png);"></span>
+              Swimming Pool & Garden
+            </a>
+          </li>
+          <hr class="w-80 h-1 bg-gray-100 border-0 rounded dark:bg-gray-700 max-sm:w-64">
+          <li class="py-4 px-5 relative">
+            <a href="private-gym.html" class="font-gothic text-bold tracking-wider flex items-center gap-2">
+              <img src="image/logo-casa.png" alt="">
+              Private Gym
+            </a>
+          </li>
+          <hr class="w-80 h-1 bg-gray-100 border-0 rounded dark:bg-gray-700 max-sm:w-64">
+        </ul>
+      </div>
+      <div class="lg:pr-4 lg:pl-12 w-full md:pl-3">
+        <h2 class="font-gothic text-bold text-2xl font-black tracking-wide hidden lg:block lg:text-4xl">Private Gym</h2>
+        <p
+          class="text-justify font-gothic text-regular py-12 mb-4 leading-loose tracking-custom sm:px-8 lg:px-0 max-sm:px-4">
+          Just because you are on holiday doesn’t mean that your fitness regimen has to take a break as well. At Casa
+          Evaliza you will find a state-of-the-art, air-conditioned private gym room with weights, treadmill and other
+          equipments. <br> <br> When the body feels tired, perhaps a body scrub or massage might help to relieve all the
+          weary. Just ask our staff to bring the spa to you! We can recommend deluxe treatments by a reputable carried
+          out in the villa’s spa room by fully trained therapists from a reputable local spa company (extra charges will
+          apply).</p>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="h-min w-full">
+            <img data-modal-target="modal" class="object-cover cursor-pointer" src="image/gym1.png" alt="Img 1"
+              id="img1" />
+          </div>
+          <div class="h-min w-full">
+            <img class="object-cover" data-modal-target="modal" src="image/gym2.png" />
+          </div>
+          <div class="h-min w-full">
+            <img class="object-cover" data-modal-target="modal" src="image/gym3.png" />
+          </div>
+          <div class="h-min w-full">
+            <img class="object-cover" data-modal-target="modal" src="image/gym4.png" />
+          </div>
+          <div class="h-min w-full">
+            <img class="object-cover" src="image/gym5.png" data-modal-target="modal" />
+          </div>
+          <div class="h-min w-full">
+            <img class="object-cover" src="image/gym6.png" data-modal-target="modal" />
+          </div>
+          <!-- The Modal -->
+          <div id="modal"
+            class="fixed z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 items-center flex justify-center 0">
+            <div>
+              <div class="modal-conten w-full max-w-2xl max-h-full rounded-lg shadow-lg relative">
+              </div>
+              <!-- The close button -->
+              <button class="fixed z-90 top-6 right-8 text-white text-5xl font-bold bg-transparent border-none"
+                onclick="closeModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+
+              <button
+                class="absolute top-1/2 -translate-y-1/2 left-4 bg-gray-200 rounded-full p-2 text-gray-800 hover:bg-gray-300 focus:outline-none"
+                onclick="prevImage()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button
+                class="absolute top-1/2 -translate-y-1/2 right-4 bg-gray-200 rounded-full p-2 text-gray-800 hover:bg-gray-300 focus:outline-none"
+                onclick="nextImage()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+              <img id="modal-img" class="p-4 w-full max-w-2xl max-h-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="rounded-t-lg bg-bold">
+    <div class="w-full mx-auto max-w-screen-xl p-4 flex items-center justify-between">
+      <br>
+      <ul class="flex flex-wrap items-center text-sm font-medium text-slate-300">
+        <li>
+          <a href="link.html" class="hover:underline me-4 font-gothic md:me-6">Link</a>
+        </li>
+        <li>
+          <a href="press.html" class="hover:underline me-4 font-gothic md:me-6">Press</a>
+        </li>
+        <li>
+          <a href="sitemap.html" class="hover:underline me-4 font-gothic md:me-6">Sitemap</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // Get the modal element
+    var modal = document.getElementById('modal');
+    // Get all images that have a data-modal-target attribute
+    var images = document.querySelectorAll('[data-modal-target]');
+    // Initialize index to keep track of the current image
+    var currentIndex = 0;
+
+    // Add click event listeners to each image
+    //...
+
+    // Add click event listeners to each image
+    images.forEach(function (image, index) {
+      image.addEventListener('click', function () {
+        currentIndex = index; // Set the current index based on clicked image
+        var modalImg = document.getElementById('modal-img');
+        modalImg.src = this.src;
+        modal.style.display = 'flex'; // Display the modal
+        modalTriggered = true; // Set a flag to indicate that the modal was triggered by a user click
+      });
+    });
+
+    //...
+
+    // Function to close the modal
+    function closeModal() {
+      modal.style.display = 'none'; // Hide the modal
+      modalTriggered = false; // Reset the flag
+    }
+
+    //...
+
+    // Add a check to prevent the modal from appearing automatically on page load
+    var modalTriggered = false;
+    if (!modalTriggered) {
+      modal.style.display = 'none'; // Hide the modal by default
+    }
+
+    // Function to show previous image
+    function prevImage() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      var modalImg = document.getElementById('modal-img');
+      modalImg.src = images[currentIndex].src;
+    }
+
+    // Function to show next image
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      var modalImg = document.getElementById('modal-img');
+      modalImg.src = images[currentIndex].src;
+    }
+
+    // Event listener for mouse wheel scroll
+    modal.addEventListener('wheel', function (e) {
+      e.preventDefault();
+      if (e.deltaY < 0) {
+        prevImage();
+      } else {
+        nextImage();
+      }
+    });
+  </script>
+
+  <script src="navactive.js"></script>
+  <script src="navbar.js"></script>
+  <script src="hover.js"></script>
 </body>
+
 </html>
