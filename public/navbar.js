@@ -1,65 +1,45 @@
-document.getElementById('hamburgerMenu').addEventListener('click', function() {
+document.getElementById('hamburgerMenu').addEventListener('click', function () {
     var sidebar = document.getElementById('sidebar');
     var bars = document.querySelectorAll('#hamburgerMenu .bar');
-    var moreVert = document.getElementById('moreVert');
-    var hiddenImage = document.getElementById('hiddenImage');
+    var backdrop = document.getElementById('backdrop');
 
-    if (sidebar.classList.contains('-translate-x-full')) {
-        sidebar.classList.remove('-translate-x-full');
-        sidebar.classList.add('translate-x-0');
-        
-        bars[0].classList.add('rotate-45', 'translate-y-1.5');
-        bars[1].classList.add('opacity-0');
-        bars[2].classList.add('-rotate-45', '-translate-y-1.5');
+    if (sidebar && bars) {
+        if (sidebar.classList.contains('-translate-x-full')) {
+            sidebar.classList.remove('-translate-x-full');
+            sidebar.classList.add('translate-x-0');
+            backdrop.classList.remove('hidden');
+            backdrop.classList.add('backdrop-visible');
 
-        // Disable moreVert button
-        moreVert.classList.add('pointer-events-none');
+            bars[0].classList.add('rotate-45', 'translate-y-1.5');
+            bars[1].classList.add('opacity-0');
+            bars[2].classList.add('-rotate-45', '-translate-y-1.5');
 
-        // Close hiddenImage if it is open
-        if (!hiddenImage.classList.contains('translate-x-full')) {
-            hiddenImage.classList.add('translate-x-full');
-            hiddenImage.classList.remove('translate-x-0');
-        }
-    } else {
-        sidebar.classList.remove('translate-x-0');
-        sidebar.classList.add('-translate-x-full');
-        
-        bars[0].classList.remove('rotate-45', 'translate-y-1.5');
-        bars[1].classList.remove('opacity-0');
-        bars[2].classList.remove('-rotate-45', '-translate-y-1.5');
-
-        // Enable moreVert button
-        moreVert.classList.remove('pointer-events-none');
-    }
-});
-
-document.getElementById('moreVert').addEventListener('click', function() {
-    var hiddenImage = document.getElementById('hiddenImage');
-    var sidebar = document.getElementById('sidebar');
-    var hamburgerMenu = document.getElementById('hamburgerMenu');
-    var bars = document.querySelectorAll('#hamburgerMenu .bar');
-
-    if (hiddenImage.classList.contains('translate-x-full')) {
-        hiddenImage.classList.remove('translate-x-full');
-        hiddenImage.classList.add('translate-x-0');
-
-        // Disable hamburger button
-        hamburgerMenu.classList.add('pointer-events-none');
-
-        // Close sidebar if it is open
-        if (!sidebar.classList.contains('-translate-x-full')) {
-            sidebar.classList.add('-translate-x-full');
+        } else {
             sidebar.classList.remove('translate-x-0');
+            sidebar.classList.add('-translate-x-full');
+            backdrop.classList.add('hidden');
+            backdrop.classList.remove('backdrop-visible');
 
             bars[0].classList.remove('rotate-45', 'translate-y-1.5');
             bars[1].classList.remove('opacity-0');
             bars[2].classList.remove('-rotate-45', '-translate-y-1.5');
         }
-    } else {
-        hiddenImage.classList.remove('translate-x-0');
-        hiddenImage.classList.add('translate-x-full');
+    }
+});
 
-        // Enable hamburger button
-        hamburgerMenu.classList.remove('pointer-events-none');
+backdrop.addEventListener('click', function () {
+    var sidebar = document.getElementById('sidebar');
+    var bars = document.querySelectorAll('#hamburgerMenu .bar');
+    var backdrop = document.getElementById('backdrop');
+
+    if (sidebar && bars) {
+        sidebar.classList.remove('translate-x-0');
+        sidebar.classList.add('-translate-x-full');
+        backdrop.classList.add('hidden');
+        backdrop.classList.remove('backdrop-visible');
+
+        bars[0].classList.remove('rotate-45', 'translate-y-1.5');
+        bars[1].classList.remove('opacity-0');
+        bars[2].classList.remove('-rotate-45', '-translate-y-1.5');
     }
 });
