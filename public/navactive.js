@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Buat elemen style baru
     const style = document.createElement('style');
     style.type = 'text/css';
     style.innerHTML = `
@@ -35,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "swimming-pool.html": "nav-swimming-pool",
         "private-gym.html": "nav-private-gym",
         "food-beverages.html": "nav-food-beverages",
-        "spa-services.html": "nav-services"
+        "spa-services.html": "nav-spa-services"
     };
 
     const currentPage = window.location.pathname.split("/").pop();
@@ -43,9 +42,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (navItem) {
         if (navItem === "nav-langfrance") {
-            document.getElementById(navItem).style.border = "1px solid #b91c1c"; // Atur border tebal khusus langfrance
+            document.getElementById(navItem).style.border = "1px solid #b91c1c";
         } else {
-            document.getElementById(navItem).style.color = "#b91c1c"; // Warna yang diinginkan saat aktif
+            document.getElementById(navItem).style.color = "#b91c1c";
         }
     }
 });
